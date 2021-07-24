@@ -1,0 +1,502 @@
+    /* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;  
+    scroll-behavior: smooth;
+}
+
+.open{              /* to show and hide buy modal*/
+    display: flex !important;
+}
+
+/* header */
+
+.header{
+    height: 46px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+ 
+}
+
+    /* header navigation */
+
+.header ul li{
+    display: inline-block;
+}
+
+.header__nav >ul >li >a{
+    line-height: 46px;
+    padding: 0 24px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+}
+
+.header__nav ul li a{
+    text-decoration: none;  
+    display: inline-block;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.header__nav>ul>li:first-child>a{
+    width: auto;
+}
+
+.header__nav>ul>li:hover >a,
+.sub-nav li:hover{
+    color: #000;
+    background-color: #ccc;
+}
+        
+            /* header sub-nav */
+
+.header__nav li{
+    position: relative;
+}
+
+.header__nav .sub-nav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+.header__nav .sub-nav a{
+    color: black;
+    line-height: 38px;
+    padding: 0 16px;
+    width: 100%;
+    min-width: 160px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header__nav li:hover .sub-nav{
+    display: block;
+    top: 100%;
+    left: 0;
+    z-index: 11;
+}
+
+
+    /* Header search */
+.header__search,
+.header__menu{
+    color: #fff;
+    padding: 0px 24px;
+    transition: .2s;
+    max-height: 46px;
+}
+
+.header__search:hover{
+    background-color:#f44336 ;
+    cursor: pointer;
+}
+
+.header__menu:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.header__search i,
+.header__menu i{
+    line-height: 46px;
+    display: inline-block;
+   
+}
+
+.header__menu{
+    display: none;
+}
+
+/* Slider */
+
+.slider{
+    width: 100%;
+    margin-top: 46px;
+    padding-top: 50%;   /* 50% width*/
+    background: url(../images/chicago.jpg) top center / cover no-repeat;
+    position: relative;
+}
+
+.slider__content{
+    position: absolute;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+    /* heading */
+.slider__content .heading{
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 24px;
+}
+    /* description */
+.slider__content .description{
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* content */
+
+    /* Shared section */
+
+        /* container section */
+
+    .content .shared-container{
+        padding: 64px 16px;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+        /* heading section */
+
+    .content .shared-heading{
+        font-size: 30px;
+        letter-spacing: 4px;
+        padding: 10px 0;
+        text-align: center;
+    }
+        /* slogan section */
+
+    .content .shared-slogan{
+        font-size: 15px;
+        margin: 15px 0;
+        font-style: italic;
+        opacity: .6;
+        text-align: center;
+    }
+
+    /* introduce section*/
+
+        /* introduce text */
+    .content .introduce__text{
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.5;
+        word-spacing: -1px;
+        margin: 15px auto;
+    }
+
+    .content .introduce__member{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        padding: 32px 0;
+    }
+
+    .content .introduce__member .name{
+        padding: 15px 0;
+    }
+
+    .content .introduce__member .image{
+        width: 60%;
+        height: auto;
+        border-radius: 3px;
+    }
+
+    /* Tour section */
+    .content .tour-section{
+        background-color: #000 !important;       
+        color: #fff;
+    }
+        /* Tour booked */
+    .content .tour__booked li{
+        width: 100%;
+        list-style: none;
+        padding: 8px 16px;
+        color: #757575;
+        font-size: 15px;
+        background-color: #fff;    
+        line-height: 1.5;  
+    }
+
+    .content .tour__booked li + li{
+        border-top: 1px solid #ddd;
+    }
+
+    .content .tour__booked li .status{
+        color: #fff;
+        background-color: #f44336;
+        padding: 0 8px;
+        margin-left: 16px;
+        display: inline-block;
+    }
+
+    .content .tour__booked li .amount{
+        color: #fff;
+        background-color: black;
+        padding: 0 8px;
+        display: block;
+        border-radius: 50%;
+        float: right;
+        margin-right: 16px;
+    }
+
+    /* Tour ticket-list */
+    .content .tour__ticket-list{
+        display: flex;
+        padding: 32px 0 48px;
+        margin: 0 -8px;
+    }
+
+    .tour__ticket-list .ticket-item{
+        /* float: left;*/
+        width: calc(100% /3);
+        padding: 0 8px;
+    }
+
+    .tour__ticket-list .place-image{
+        width: 100%;     
+        display: block;
+    }
+
+    .tour__ticket-list .place-content{
+        background-color: #fff;
+        color: #000;
+        padding: 16px;
+        font-size: 15px;
+    }
+
+    .tour__ticket-list .place-content .place-name{
+        font-weight: 600;
+    }
+
+    .tour__ticket-list .place-content .time{
+        margin: 15px 0;
+        opacity: 0.6;
+    }
+
+    .tour__ticket-list .place-content .description{
+        line-height: 1.4;
+    }
+
+    .tour__ticket-list .place-content .buy-btn{
+        margin-top: 15px;
+        padding: 8px 16px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+        display: inline-block;
+    }
+
+    .tour__ticket-list .place-content .buy-btn:hover{
+        background-color: #ccc;
+        color: black;
+
+    }
+
+    /* Contact section */
+    .contact__container{
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.5;
+        padding: 32px 0;
+    }
+
+    .contact__container .contact-info{
+        font-size: 18px;
+    }
+
+    .contact__container .contact-info i{
+        width: 30px;
+    }
+
+    .contact__container .contact-form{
+        font-size: 15px;
+    }
+
+    .contact__container .contact-form .form-control{
+        padding: 10px 8px;
+        border: 1px solid #ccc;
+        
+    }
+
+    .contact__container .contact-form .name-input{
+        margin-right: 12px;
+    }
+
+    .contact__container .contact-form .message-input{
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .contact__container .contact-form .send-btn{
+        float: right;
+        padding: 9px 15px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        font-size: 15px;
+        margin: 16px 0;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .contact__container .contact-form .send-btn:hover{
+        background-color: #ccc;
+        color: #000;
+    }
+
+    .contact__container .contact-form form::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    /* image section */
+
+    .content .img-section{
+        width: 100%;
+    }
+
+/* Footer */
+.footer{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.footer .social-icons{
+    font-size: 24px;
+    opacity: .6;
+}
+
+.footer .social-icons .icon{
+    color: #000;
+}
+
+.footer .social-icons .icon:hover{
+    opacity: .5;
+}
+
+.footer .copyright{
+    font: 15px;
+    opacity: .6;
+    margin: 15px 0;
+}
+
+.footer .copyright a{
+    color: #000;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+
+/* buy modal (tour section) */
+.modal{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+
+.modal__container{
+    width: 900px;
+    background-color: #fff;
+    animation: modalTopToBottom ease 0.3s;
+    margin: 0 10px;
+}
+
+.modal-body__label{
+    display: block;
+}
+
+.modal__container .modal-close{
+    float: right;
+    padding: 16px 18px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal__container .modal-close:hover {
+    opacity: 1;
+}
+
+.modal__container .modal-header{
+    padding: 46px 18px;
+    background-color: #009688;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.modal__container .modal-body{
+    font-size: 15px;
+    padding: 16px;
+}
+
+.modal__container .modal-body .modal-body__label{
+    margin-bottom: 15px;
+}
+
+.modal-body .modal-body__label:last-of-type{
+    margin-top: 30px;
+}
+
+.modal__container .modal-body .modal-body__input{
+    width: 100%;
+    padding: 10px 8px;
+}
+
+.modal__container .modal-body .modal-body__btn{
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    background-color: #009688;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+ 
+
+.modal__container .modal-body .modal-body__btn:hover {
+    opacity: 0.8;
+}
+
+.modal__container .modal-footer{
+    text-align: right;
+    padding: 0 16px 16px;
+}
+
+@keyframes modalTopToBottom {
+    from{
+        transform: translateY(-140px);
+        opacity: .2;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

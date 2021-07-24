@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Band</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <div id="main">
+
+    <!-- Header -->
+
+        <div class="header js-header" id="head">
+            <!-- header navigation -->
+            <div class="header__nav">
+                <ul>
+                    <li><a class="js-menuItem" href="#">Home</a></li>
+                    <li><a class="js-menuItem" href="#band">Band</a></li>
+                    <li><a class="js-menuItem" href="#tour">Tour</a></li>
+                    <li><a class="js-menuItem" href="#contact">Contact</a></li>
+                    <li class="dropdown-list">
+                        <a href="#" class="js-parentMenu">More</a>
+                        <ul class="sub-nav">
+                            <li><a class="js-menuItem" href="">Merchandise</a></li>
+                            <li><a class="js-menuItem" href="">Extras</a></li>
+                            <li><a class="js-menuItem" href="">Media</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- header search -->
+            <div class="header__search">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <div class="header__menu js-headerMenu" id="js-headerMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+    <!-- Slider -->
+
+        <div class="slider">
+            <div class="slider__content">
+                <h2 class="heading">New York</h2>
+                <p class="description">The atmosphere in New York is lorem ipsum.</p>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <!-- Introduce section-->
+            <div class="introduce" id="band">
+                <div class="shared-container">
+                    <div class="introduce__heading shared-heading">THE BAND</div>
+                    <p class="introduce__slogan shared-slogan">We love music</p>
+                    <p class="introduce__text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitation bullace laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="introduce__member mobile-display-col">
+                    <div class="member1">
+                        <p class="name">Name</p>
+                        <img src="./assets/images/bandmember.jpg" alt="" class="image">
+                    </div>
+                    <div class="member2">
+                        <p class="name">Name</p>
+                        <img src="./assets/images/bandmember.jpg" alt="" class="image">
+                    </div>
+                    <div class="member3">
+                        <p class="name">Name</p>
+                        <img src="./assets/images/bandmember.jpg" alt="" class="image">
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tour section -->
+            <div class="tour-section" id="tour">
+                <div class="shared-container">
+                    <div class="tour__heading shared-heading">TOUR DATES</div>
+                    <p class="tour__slogan shared-slogan">Remember to book your tickets!</p><br>
+                    <ul class="tour__booked">
+                        <li>
+                            September
+                            <span class="status">Sold out</span>
+                        </li>                       
+                        <li>
+                            October
+                            <span class="status">Sold out</span>
+                        </li>
+                        <li>
+                            November
+                            <span class="amount">3</span>
+                        </li>
+                    </ul>
+                    <div class="tour__ticket-list mobile-display-col">
+                        <div class="ticket-item  mobile-full-width">
+                            <img src="./assets/images/newyork.jpg" alt="New York" class="place-image">
+                            <div class="place-content">
+                                <p class="place-name">New York</p>
+                                <p class="time">Fri 27 Nov 2016</p>
+                                <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-btn js-BuyBtn mobile-full-width">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="ticket-item mobile-full-width">
+                            <img src="./assets/images/paris.jpg" alt="Paris" class="place-image">
+                            <div class="place-content">
+                                <p class="place-name">Paris</p>
+                                <p class="time">Sat 28 Nov 2016</p>
+                                <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>                                                                  
+                                <button class="buy-btn js-BuyBtn mobile-full-width">Buy Tickets</button>                      
+                            </div>    
+                        </div>
+                        <div class="ticket-item mobile-full-width">
+                            <img src="./assets/images/sanfran.jpg" alt="San Francisco" class="place-image">
+                            <div class="place-content">
+                                <p class="place-name">San Francisco</p>
+                                <p class="time">Sun 29 Nov 2016</p>
+                                <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="buy-btn js-BuyBtn mobile-full-width">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <div class="contact" id="contact">
+                <div class="shared-container">
+                    <div class="contact__heading shared-heading">CONTACT</div>               
+                    <p class="contact__slogan shared-slogan">Fan? Drop a note!</p>  
+                    <div class="contact__container mobile-display-col">
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                            <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                            <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                        </div>
+                        <div class="contact-form">
+                            <form action="">
+                                <div class="row1">
+                                    <input type="text" class="name-input form-control mobile-full-width" required placeholder="Name">
+                                    <input type="email" class="email-input form-control mobile-full-width" required placeholder="Email">
+                                </div>
+                                <div class="row2">
+                                    <input type="text" class="message-input form-control" required placeholder="Message">
+                                </div>
+                                <input type="submit" value="SEND" class="send-btn mobile-full-width">
+                            </form>
+                        </div>
+                    </div>         
+                </div>
+            </div>
+
+            <!-- Images section -->
+
+            <div>
+                <img src="./assets/images/map.jpg" alt="Map" class="img-section">
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook icon" ></i></a>
+                <a href="#"><i class="fab fa-instagram icon" ></i></a>
+                <a href="#"><i class="fab fa-youtube icon" ></i></a>
+                <a href="#"><i class="fab fa-pinterest-p icon" ></i></a>
+                <a href="#"><i class="fab fa-twitter icon" ></i></a>
+                <a href="#"><i class="fab fa-linkedin-in icon" ></i></a>
+            </div>
+            <div class="copyright">
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- buy modal (tour section) -->
+    <div class="modal js-modal">
+        <div class="modal__container js-modalContainer">
+            <div class="modal-close js-ModalClose">
+                <i class="fas fa-times"></i>               
+            </div>
+            <div class="modal-header">
+                <i class="fas fa-suitcase"></i>
+                Tickets
+            </div>
+            <div class="modal-body">
+                <label for="input-quantity" class="modal-body__label">
+                    <i class="fas fa-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="input-quantity" class="modal-body__input" placeholder="How many?">
+                
+                <label for="input-email" class="modal-body__label">
+                    <i class="fas fa-user"></i>
+                    Send To
+                </label>
+                <input type="email" id="input-email" class="modal-body__input" placeholder="Enter email">
+
+                <button class="modal-body__btn">
+                    Pay
+                    <i class="fas fa-check"></i>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <p>Need <a href="#">help?</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- show and hide buy modal -->
+<script>
+    const buyBtns = document.querySelectorAll('.js-BuyBtn')
+    const modal = document.querySelector('.js-modal')
+    const closeBtn = document.querySelector('.js-ModalClose')
+    const modalContainer = document.querySelector('.js-modalContainer')
+
+    // function show buy modal ( add 'open' class to .modal)
+    function showModal() {
+        modal.classList.add('open')
+    }
+    // function hide buy modal ( remove 'open' class to .modal)
+    function hideModal() {
+        modal.classList.remove('open')
+    }
+
+    // có 3 nút nên lặp từng nút và nghe hành vi click
+    for (const buyBtn of buyBtns){  
+        buyBtn.addEventListener('click', showModal)
+    }
+
+    closeBtn.addEventListener('click', hideModal)
+
+    modal.addEventListener('click', hideModal)
+
+    modalContainer.addEventListener('click', function (event) {
+        event.stopPropagation()
+    })
+</script>
+
+<script>
+    
+
+    const headerMenu = document.querySelector('.js-headerMenu');
+    const header = document.querySelector('.header');
+    const headerHeight = header.clientHeight;
+    const menuItems = document.querySelectorAll('.js-menuItem');
+    const parentMenu = document.querySelector('.js-parentMenu');
+     
+    function ShowAndHideMenu(){  // nguyên lí : chỉnh height
+        var isClosed = header.clientHeight ===  headerHeight;
+        if (isClosed){
+            header.style.height= 'auto';
+        } else{
+            header.style.height= null;
+        }
+        
+    }
+    headerMenu.addEventListener('click',ShowAndHideMenu);
+
+    // close menu when click 
+    for ( const menuItem of menuItems){
+        menuItem.addEventListener('click',function () {
+            header.style.height = null;
+        })
+
+    parentMenu.addEventListener('click', function(event){
+        event.preventDefault();
+    })
+    }
+
+            // const headerMenu = document.getElementById('js-headerMenu')
+            // const header = document.getElementById('head')
+
+            // headerMenu.onclick = function(){
+            //     var isClosed = header.clientHeight ===  headerHeight;
+            //     if (isClosed){
+            //          header.style.height= 'auto';
+            //     } else{
+            //          header.style.height= null;
+            //     }
+            // }
+</script>
+</body>
+</html>

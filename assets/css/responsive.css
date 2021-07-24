@@ -1,0 +1,77 @@
+/* break point */
+
+    /* PC */
+
+@media (min-width:1024px){
+    
+}
+
+    /* Tablet */
+
+@media (min-width:740px) and (max-width:1023px){
+        .modal__container {
+            width: 500px;
+        }
+    }
+
+    /* Mobile */
+
+@media (max-width:740px){
+    .mobile-full-width{
+        width: 100% !important;
+    }
+
+    .mobile-display-col{
+        flex-direction: column;
+    }
+
+    .header{
+        display: block;
+        overflow: hidden;
+    }
+
+    /* remove 'position' attribute to display sub menu  */
+    .header__nav .sub-nav {
+        position: initial;
+        background-color: #999;
+    }
+
+    .header__nav .sub-nav a{
+        padding: 4px 32px;
+    }
+
+    /* hide search button */
+    .header__search{
+        display: none;
+    }
+
+    /* show menu button */
+    .header__menu{
+        display: block;
+        position: absolute;
+        top: 0;right: 0;
+    }
+
+    .header ul li {
+        display:block;
+    }
+
+    /* hide slider content */
+    .slider__content{
+        display: none;
+    }
+
+    .tour__ticket-list .ticket-item + .ticket-item{
+        padding-top: 16px;
+        
+    }
+        
+    .contact__container .contact-form .name-input{
+        margin-bottom: 8px;
+    }
+
+
+    .contact__container .contact-form{
+        padding-top: 16px;
+    }
+}
